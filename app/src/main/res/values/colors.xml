@@ -4,8 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="c_dim">#88000000</color>
     <color name="c_000000">#000000</color>
     <color name="c_ffffff">#ffffff</color>
+    <color name="c_d5d5d5">#D5D5D5</color>
     <color name="c_d3d3d3">#D3D3D3</color>
+    <color name="c_666666">#666666</color>
+    <color name="c_3d3d3d">#3D3D3D</color>
     <color name="c_001C66">#001C66</color>
 </resources>

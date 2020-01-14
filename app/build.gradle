@@ -21,6 +21,8 @@ android {
     }
 }
 
+def recyclerview_version = "1.1.0"
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -32,6 +34,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
     compile "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
 }
 
 repositories {

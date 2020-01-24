@@ -20,22 +20,24 @@
         android:orientation="horizontal"
         android:background="@drawable/main_bg">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/main_content_recyclerview"
+        <TextView
+            android:id="@+id/main_item_text"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/main_item_container"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_weight="7"
-            app:layout_constraintHorizontal_chainStyle="packed"/>
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:textSize="20sp"
+            tools:text=""/>
 
         <!-- FIXME 아이템에 따라 동적으로 생성시키는 것도 괜찮을 듯? -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/main_item_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintStart_toEndOf="@+id/main_content_recyclerview"
+            app:layout_constraintStart_toEndOf="@+id/main_item_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_weight="5"

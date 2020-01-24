@@ -1,12 +1,14 @@
 package com.taehyung.clickricecake.ui.splash
 
 import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.taehyung.clickricecake.MainActivity
+import com.taehyung.clickricecake.ui.data.Const
 
 class SplashActivity : AppCompatActivity() {
     val LOGD = "SplashActivity"
@@ -29,6 +31,11 @@ class SplashActivity : AppCompatActivity() {
     private fun startMainActivity() {
         Log.d(LOGD, "startMainActivity() called")
         val intent = Intent(applicationContext, MainActivity::class.java)
+        intent.addFlags(FLAG_ACTIVITY_REORDER_TO_FRONT)
+
+        intent.putExtra(Const.TOTAL_MAKED_COUNT.value, 0L)
+        intent.putExtra(Const.ITEM_LIST.value, 0L)
+
         startActivity(intent)
         finish()
     }
